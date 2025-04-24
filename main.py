@@ -1,8 +1,17 @@
-print("Hola mundo")
 
 
-name = "david"
+
+name:int = "23"
 lastName = "henaoBustamante"
+
+name2 = 2
+
+age = "henao"
+
+
+resultado = int(name) + name2
+
+print(resultado)
 
 #print(lastName)
 # print(lastName[:5])
@@ -21,7 +30,7 @@ lastName = "henaoBustamante"
 
 
 
-print(name + "-" + "Nombre")
+
 
 
 
