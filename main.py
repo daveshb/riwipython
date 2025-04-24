@@ -12,6 +12,7 @@ age = "henao"
 resultado = int(name) + name2
 
 print(resultado)
+print(resultado)
 
 #print(lastName)
 # print(lastName[:5])
