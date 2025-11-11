@@ -7,7 +7,7 @@
 Una **función** es un bloque reutilizable de código que ejecuta una tarea. Se define con `def` y se **llama** por su nombre.
 
 ```py
-def saludar():
+    def saludar():
     print("¡Hola, coder!")
 
 saludar()  # Llamada
@@ -52,8 +52,8 @@ print("Área:", resultado)
 def saludar(nombre="Mundo"):
     print(f"Hola, {nombre}!")
 
-saludar()        # Usa el valor por defecto
-saludar("Pedro") # Sobrescribe el valor por defecto
+    saludar()        # Usa el valor por defecto
+    saludar("Pedro") # Sobrescribe el valor por defecto
 ```
 **Salida:**
 ```
