@@ -1,3 +1,32 @@
+import  utils
+
+utils.crear_tabla(3)
+utils.crear_tabla(40)
+utils.crear_tabla(33)
+utils.crear_tabla(50)
+utils.crear_tabla(80)
+
+utils.saludar()
+
+result = utils.areaRectangulo(10,3)
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # datos = ["Ana", "Luis", "Zoe"]
 
 # with open("nombres.txt", "w") as archivo:
@@ -8,17 +37,3 @@
 #     contenido = archivo.read()
 
 # print(contenido)
-
-def crear_tabla():
-        numero = int(input("Ingresa un numero para generar su tabla de multiplicar: "))
-        nombre_archivo = f"tabla_{numero}.txt"
-
-        with open(nombre_archivo, "w") as archivo:
-            for i in range(1, 11):
-                linea = f"{numero} x {i} = {numero * i}\n"
-                archivo.write(linea)
-
-        print(f"Archivo '{nombre_archivo}' creado con exito.")
-
-
-crear_tabla()

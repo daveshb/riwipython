@@ -1,3 +1,5 @@
+import time
+import os
 
 # fruits = ["Uva", "Mango", "Naranja", "Madarina"]
 
@@ -10,17 +12,35 @@
 #     for linea in file:
 #         print(linea)
 
-while True:
-    try:
-        num = int(input("Ingrese un numero para la tabla: "))
 
-        with open(f"tablas/tabla-del-{num}.txt","w") as file:
-            for i in range(1,11):
-                file.write(f"{num} x {i} = {num * i} \n")
-        break
-    except ValueError as E: 
-        print(E)
-        print("ingrese solo numeros")
+# def loader():
+#     print("-..")
+#     time.sleep(0.5)
+#     os.system("clear")
+#     print(".-.")
+#     time.sleep(0.5)
+#     os.system("clear")
+#     print("..-")
+#     time.sleep(0.5)
+#     os.system("clear")
+
+
+
+
+
+# while True:
+#     try:
+#         num = int(input("Ingrese un numero para la tabla: "))
+
+#         with open(f"tablas/tabla-del-{num}.txt","w") as file:
+#             for i in range(1,11):
+#                 file.write(f"{num} x {i} = {num * i} \n")
+#         break
+#     except ValueError as E: 
+#         print(E)
+#         print("ingrese solo numeros")
+#     finally:
+#         print("se ejecuta al fina")
             
 
 
