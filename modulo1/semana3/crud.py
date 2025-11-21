@@ -5,8 +5,8 @@ ARCHIVO = "estudiantes.json"
 # Inicializar datos
 def inicializar():
     try:
-        with open(ARCHIVO, "r") as f:
-            return json.load(f)
+        with open(ARCHIVO, "r") as file:
+            return json.load(file)
     except FileNotFoundError:
         return {}
 
@@ -33,8 +33,8 @@ def leer():
         print(f"Código: {cod} | Nombre: {info['nombre']} | Edad: {info['edad']}")
     print()
 
-# UPDATE - Actualizar registros
-def actualizar(codigo, nombre=None, edad=None):
+# # UPDATE - Actualizar registros
+def actualizar(codigo, nombre="", edad=""):
     data = inicializar()
     if codigo in data:
         if nombre:
@@ -46,26 +46,58 @@ def actualizar(codigo, nombre=None, edad=None):
     else:
         print(f"✗ Estudiante '{codigo}' no encontrado.")
 
-# DELETE - Eliminar registros
-def eliminar(codigo):
-    data = inicializar()
-    if codigo in data:
-        nombre = data[codigo]["nombre"]
-        del data[codigo]
-        guardar(data)
-        print(f"✓ Estudiante '{nombre}' eliminado.")
-    else:
-        print(f"✗ Estudiante '{codigo}' no encontrado.")
+# # DELETE - Eliminar registros
+# def eliminar(codigo):
+#     data = inicializar()
+#     if codigo in data:
+#         nombre = data[codigo]["nombre"]
+#         del data[codigo]
+#         guardar(data)
+#         print(f"✓ Estudiante '{nombre}' eliminado.")
+#     else:
+#         print(f"✗ Estudiante '{codigo}' no encontrado.")
+
+
+
+# crear("Codido2","Angi",26)
+# crear("Codido3","Julian",30)
+# crear("Codido4","Andres",15)
+
+leer()
+
+
+# if not {}:
+#     print("entra")
+# else:
+#     print("falla")
+
+
+
+
+
+
+
+
 
 # Pruebas del CRUD
-if __name__ == "__main__":
-    crear("A001", "Ana", 21)
-    crear("A002", "Luis", 20)
-    crear("A003", "Zoe", 19)
-    leer()
+# if __name__ == "__main__":
+#     crear("A001", "Ana", 21)
+#     crear("A002", "Luis", 20)
+#     crear("A003", "Zoe", 19)
+#     leer()
     
-    actualizar("A001", edad=22)
-    leer()
+#     actualizar("A001", edad=22)
+#     leer()
     
-    eliminar("A002")
-    leer()
+#     eliminar("A002")
+#     leer()
+
+
+# user = {
+#     "nane": "David",
+#     "lastname" : "Henao"
+# }
+
+# user["age"] = 34
+
+# print(user)

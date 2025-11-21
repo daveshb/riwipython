@@ -1,10 +1,18 @@
 {
-    "A001": {
-        "nombre": "Ana",
-        "edad": 22
+    "Codido1": {
+        "nombre": "Mateo",
+        "edad": 23
     },
-    "A003": {
-        "nombre": "Zoe",
-        "edad": 19
+    "Codido2": {
+        "nombre": "Angi",
+        "edad": 26
+    },
+    "Codido3": {
+        "nombre": "Julian",
+        "edad": 30
+    },
+    "Codido4": {
+        "nombre": "Andres",
+        "edad": 15
     }
 }
